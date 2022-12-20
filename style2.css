@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+   margin:0
+   padding 0
+   box-sizing border-box
+   font-family 'Poppins',sans-serif;
+
+}
+
+body{
+    min-height: 100vh;
+   background-image: url(cats\ paws.jpg);
+   /* display: flex;
+   justify-content: center;
+   align-items: center; */
+}
+
+
+ .card2{
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background:#edede9 ;
+    display: flex;
+    transition: 0.5s ease-in-out;
+ }
+ .card2:hover{
+    width: 600px;
+ }
+ .card2 .imgbx{
+    position: relative;
+    min-width: 300px;
+    height:100%;
+    background: white;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 40px;
+overflow: hidden;
+z-index: 2;
+
+ }
+
+.card2 .imgbx img{
+    max-width: 250px;
+    transition: 0.5s ease-in-out;
+    height: 400px;
+    padding-top: 40px;
+}
+
+
+
+
+.card2 .details{
+    position: absolute;
+    left: 0;
+    min-width: 250px;
+    height: 100%;
+    background:#edede9;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    flex-direction: column;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+    
+}
+
+.card2:hover .details{
+    left: 300px;
+
+}
+.card2 .details::before{
+content:'' ;
+position: absolute;
+left: 0;
+width: 0;
+height: 0;
+border-top: 10px solid transparent;
+border-bottom: 10px solid transparent;
+border-left: 10px solid white;
+}
+
+.card2 .details h3{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 1em;
+}
+.card2 .details h3 span{
+    font-size: 0.65em;
+    font-weight: 300;
+    text-transform: none;
+    opacity: 0.85;
+}
+
+.card2 .details h4{
+    color:#a5978b;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1em;
+}
+.card2 .details p{
+    color: black;
+    opacity:0.85;
+    font-size: 0.8em;
+
+}
+
+
+
+.card2 .details .time{
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+}
+.card2 .details li{
+   list-style: none;
+   color:#685044;
+   font-size: 0.9em;
+   width: 40px;
+   height: 40px;
+   border: 2px solid #685044;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 500;
+   opacity: 0.65;
+   cursor: pointer;padding-left: 0%;
+   
+}
+.card2 .details li:hover{
+    color: #685044;
+    background: white;
+    opacity:1;
+    
+}
+
+.card2 .details .book{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.card2 .details  .book h2{
+    color: #685044;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;   
+}
+
+
+
+
+
+
+.card2 .details .book a{
+    display: inline-flex;
+    padding: 6px 10px;
+    background: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #685044;
+    text-align: center;
+}
+
+/* nav{
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 0%;
+    padding-bottom: 0%;
+ }
+ 
+ 
+ nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+ }
+ 
+ nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    border: 1px solid black;
+    
+ } */
+ 
+
+
+
+
+
+
+
+
+
